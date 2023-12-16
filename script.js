@@ -1,5 +1,7 @@
 const container = document.querySelector('.repo-container')
 
+const uuid = length => Array.from({ length }, () => Math.random().toString(36)[2]).join('');
+
 const user = 'fractial';
 
 fetch(`https://api.github.com/users/${user}/repos`)
@@ -11,7 +13,7 @@ fetch(`https://api.github.com/users/${user}/repos`)
 
             const img = document.createElement('img');
             img.className = 'repo';
-            img.src = `https://opengraph.githubassets.com/0/${user}/${repo.name}`;
+            img.src = `https://opengraph.githubassets.com/${uuid(10)}/${user}/${repo.name}`;
             img.alt = repo.name;
 
             a.append(img);
