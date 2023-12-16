@@ -1,4 +1,4 @@
-const container = document.querySelector('.repo-container')
+const container = document.getElementById('repos');
 
 const uuid = length => Array.from({ length }, () => Math.random().toString(36)[2]).join('');
 
@@ -18,6 +18,11 @@ fetch(`https://api.github.com/users/${user}/repos`)
 
             a.append(img);
             container.appendChild(a);
+
+            VanillaTilt.init(a, {
+                max: 2.5,
+                perspective: 1000,
+            });
         });
     })
     .catch(error => console.error('Error:', error));

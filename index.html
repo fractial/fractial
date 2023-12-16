@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fractial</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="main">
-        <div class="main-container">
-            <h2 class="name">Fractial</h2>
-            <h1 class="label">Request, Design & Code</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <div class="logo-container">
-                <a href="https://github.com/fractial"><img invert class="logo" src="assets/github.svg" alt="github"></a>
-                <a href="https://nodejs.org/"><img grayscale class="logo" src="assets/nodejs.svg" alt="nodejs"></a>
-                <img grayscale class="logo" src="assets/js.svg" alt="js">
-            </div>
+    <header>
+        <h2 class="title">Fractial</h2>
+        <h1>Request, Design & Code</h1>
+        <p>This is the way</p>
+        <div class="links">
+            <a class="link" href="https://github.com/fractial"><img src="assets/github.svg" alt="github/fractial"></a>
+            <a class="link" href="https://git-scm.com/"><img src="assets/git.svg" alt="git"></a>
+            <a class="link" href="https://nodejs.org"><img src="assets/nodejs.svg" alt="nodejs"></a>
         </div>
-    </div>
-    <div class="repo-container"></div>
+    </header>
+    <main>
+        <div id="repos"></div>
+    </main>
+    <footer id="bottom">&copy; 2023 Fractial</footer>
 </body>
 </html>
