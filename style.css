@@ -72,16 +72,17 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 2rem;
-    transition: all;
 }
 
 .repo {
     max-width: 100%;
     min-width: 500px;
     border-radius: 0.5rem;
+    transition: all;
 }
 
 .repo:hover {
+    transform: scale(1.0125);
     outline: 0.25rem solid rgba(255, 255, 255, 0.5);
     outline-offset: 0.25rem;
 }
