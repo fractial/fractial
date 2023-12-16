@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-color: #0d1117;
+        --background-color: #f6f8fa;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #f6f8fa;
+        --text-color-light: #848d97;
+        --background-color: #0d1117;
+    }
+
+    .logo[invert] {
+        filter: invert();
+    }
+
+    .logo[grayscale] {
+        filter: grayscale();
+    }
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+#main {
+    margin: 0 auto;
+    height: 100dvh;
+    width: 60em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.name::before {
+    content: url(assets/fractial.svg);
+    margin-right: 0.125em;
+}
+
+.logo-container {
+    display: flex;
+    gap: 1em;
+}
+
+.logo {
+    width: 3em;
+    height: 3em;
+    border-radius: 0.25em;
+}
+
+.repo-container {
+    padding: 0 8em;
+    height: 50dvh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+}
+
+.repo {
+    width: 100%;
+    border-radius: 0.5em;
+    transition: transform 0.25s ease;
+    transition: outline 0.25 ease;
+}
+
+.repo:hover {
+    outline: 0.25em solid rgba(255, 255, 255, 0.50);
+    outline-offset: 0.25em;
+    transform: scale(1.0125);
+}
+
+#bottom {
+    height: 10em;
+    color: var(--text-color-light);
+    background-color: red;
+}
