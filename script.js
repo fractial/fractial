@@ -2,7 +2,7 @@ const div = document.getElementById('repos');
 
 const name = 'fractial';
 
-fetch(`https:api.github.com/users/${name}/repos`)
+fetch(`https://api.github.com/users/${name}/repos`)
 .then(response => response.json())
 .then(repos => {
     repos.forEach(repo => {
