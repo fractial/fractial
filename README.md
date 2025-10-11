@@ -1,6 +1,6 @@
 <h1>Hello there 👋</h1>
 <p>
-  I´m a german developer focused on everything related to <code>javascript</code> applications. Thanks for visiting my profile!
+  I'm a german developer focused on everything related to <code>javascript</code> applications. Thanks for visiting my profile!
 </p>
 <img src="https://skillicons.dev/icons?i=js,ts,html,css,nodejs,tailwind,react,next,figma,git"></img>
 <details>
