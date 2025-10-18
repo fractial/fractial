@@ -9,4 +9,4 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fractial&layout=compact&text_color=e6edf3&icon_color=e6edf3&border_color=2ea04366&bg_color=2ea04326&theme=dark&hide_title=true&show_icons=true&line_height=20"></img>
 </details>
 
-<text>Text</text>
+<text font-size="24">Text</text>
